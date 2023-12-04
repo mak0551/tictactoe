@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "gllroy";
+    box-sizing: border-box;
+    border: 0ch;
+}
+.body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-items: center;/* vertical*/
+    justify-content: center;/* horizontal*/
+    background-color: tomato;
+}
+.container{
+    height: 315px;
+    width: 315px;
+    display: grid;
+    /* grid-gap: 5px; */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; 
+}
+#box1{
+    font-size: 100px;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    background-color: tomato;
+}
+#box2{
+    font-size: 100px;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    background-color: tomato;
+}
+#box3{
+    font-size: 100px;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    background-color: tomato;
+}
+#box4{
+    font-size: 100px;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    background-color:tomato ;
+}
+#box5{
+    font-size: 100px;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    background-color: tomato;
+}
+#box6{
+    font-size: 100px;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    background-color: tomato;
+}
+#box7{
+    font-size: 100px;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    background-color: tomato;
+}
+#box8{
+    font-size: 100px;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    background-color: tomato;
+}
+#box9{
+    font-size: 100px;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    background-color: tomato;
+}
+.box{
+    text-transform: lowercase;
+}
+.box:hover{
+    position: relative;
+    animation-name: crazy;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+@keyframes crazy {
+    from{
+        transition: all 1s;
+        border-radius: 200px;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.intro{
+    position: absolute;
+    background-color: tomato;
+    height: 10vh;
+    width: 100%; 
+    text-align: center;
+    font-size:xx-large;
+    padding-top: 3vh;
+    font-style:italic;
+    font-family:Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: 550;
+    text-decoration:underline;
+}
